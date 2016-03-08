@@ -1,0 +1,131 @@
+$background: #1E1E1E;
+$height: 12vh;
+
+@mixin title-bar-title {
+  color: white;
+  font-size: 1.2rem;
+}
+
+@mixin menu-1 {
+  .title-bar{
+    border: 2px solid yellow;
+    z-index: 2;
+
+    background: $background;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    .title-bar-left{
+      padding-top: 18px;
+      padding-left: 10px;
+      button{
+        padding-left: 12px;
+      }
+      .title-bar-title{
+       @include title-bar-title;
+      }
+    }
+    .title-bar-right{
+      padding-top: 12px;
+      padding-right: 20px;
+      span{
+        color: white;
+        font-size: 1.2rem;
+      }
+      h5{
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@mixin menu-2 {
+  .top-bar{
+    border: 2px solid green;
+    z-index: 2;
+    height: $height - 4;
+    background: $background;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    .title-bar-left{
+      padding-top: 9px;
+      padding-left: 1.5em;
+      button{
+        padding-left: 12px;
+      }
+      .title-bar-title{
+       @include title-bar-title;
+      }
+    }
+    .title-bar-right{
+      padding-top: 5px;
+      padding-right: 1.5em;
+      span{
+        color: white;
+        font-size: 1.2rem;
+      }
+      h5{
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@mixin menu-3 {
+  .top-bar{
+    border: 2px solid red;
+
+    background: $background;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    .title-bar-left{
+      padding-top: 18px;
+      padding-left: 10px;
+      button{
+        padding-left: 12px;
+      }
+      .title-bar-title{
+       @include title-bar-title;
+      }
+    }
+    .title-bar-right{
+      padding-top: 12px;
+      padding-right: 20px;
+      span{
+        color: white;
+        font-size: 1.2rem;
+      }
+      h5{
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@mixin menu-4 {
+  .header{
+    border-top: 13px solid #EBEBEB;
+    .callout{
+      background: none;
+      border: none;
+      height: 30vh;
+    }
+    .img{
+      position: relative;
+      left: 15em;
+      width: 30vw;
+      height: 30vh;
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    }
+    .menu{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding-bottom: 1em;
+      a{
+        font-size: 1.7rem;
+        color: #2D2D2D;
+        text-transform: uppercase;
+        &:hover{
+          border-bottom: 3px solid #CC9029;
+        }
+      }
+    }
+  }
+}

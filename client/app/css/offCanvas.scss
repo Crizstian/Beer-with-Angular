@@ -1,0 +1,44 @@
+@mixin offCanvas-1 {
+  .off-canvas.position-left{
+    left: -320px;
+    width: 320px;
+    background-image: linear-gradient(to bottom,#7099C9,#0C1C2D);
+    .menu-canvas{
+      ul{
+        padding: 2.5em 1em;
+        li{
+          padding: 0.5em;
+          a{
+            font-weight: bold;
+            font-size: 1.1em;
+            color: white;
+            i{
+              padding-right: 1.5em;
+              font-weight: 100;
+              font-size: 1.3em;
+            }
+          }
+        }
+      }
+      .info{
+        padding-left: 1.5em;
+        bottom: 0px;
+        span{
+          color: white;
+        }
+        .sidebar-img{
+          position: relative;
+          padding-top: -0.5em;
+          padding-right: -1.5em;
+          img{
+            border: 2px solid white;
+            width: 46px;
+            height: 46px;
+            border-radius: 150px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+          }
+        }
+      }
+    }
+  }
+}

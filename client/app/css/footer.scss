@@ -1,0 +1,23 @@
+@mixin footer-4 {
+  .foot {
+    border-top: 12px solid #d3d3d3;
+    border-left: 12px solid #d3d3d3;
+    border-bottom: 12px solid #d3d3d3;
+    padding: 1em;
+    .redes{
+      li {
+        display: inline;
+      }
+      img {
+        width: 56px;
+        height: 56px;
+      }
+    }
+    .title{
+      font-weight: 600;
+    }
+    .description{
+      font-weight: 500;
+    }
+  }
+}

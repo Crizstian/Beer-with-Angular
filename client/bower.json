@@ -1,0 +1,23 @@
+{
+  "name": "todo.app.angular2",
+  "version": "0.0.1",
+  "authors": [
+    "Cristian Ramirez <cristiano.rosetti@gmail.com>"
+  ],
+  "description": "Developing a MEAN app with Angular 2.0",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "~6.1.0",
+    "motion-ui": "~1.1.0"
+  }
+}

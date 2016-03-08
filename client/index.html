@@ -1,0 +1,42 @@
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <base href="/">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cerarmich ®</title>
+    <!-- css libs -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="vendor/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="app/css/app.css" />
+    <link rel="stylesheet" href="vendor/css/owl.carousel.css">
+    <!-- js libs -->
+    <script src="lib/angular2-polyfills.js"></script>
+    <script src="lib/system.src.js"></script>
+    <script src="lib/Rx.js"></script>
+    <script src="lib/angular2.dev.js"></script>
+    <script src="lib/router.dev.js"></script>
+    <script src="lib/http.dev.js"></script>
+    <script>
+      System.config({
+        packages: {
+            'app': {defaultExtension: 'js'}
+        }
+      });
+      System.import('app/boot').then(null, console.error.bind(console));
+    </script>
+  </head>
+
+  <body>
+
+    <my-app>Loading...</my-app>
+
+    <script src="vendor/js/jquery.min.js"></script>
+    <script src="vendor/js/what-input.min.js"></script>
+    <script src="vendor/js/foundation.min.js"></script>
+    <script src="vendor/js/owl.carousel.min.js"></script>
+  </body>
+
+  </html>

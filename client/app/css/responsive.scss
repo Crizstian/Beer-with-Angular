@@ -1,0 +1,343 @@
+@import "menu";
+@import "offCanvas";
+@import "home";
+@import "asociados";
+@import "categories";
+@import "footer";
+
+.data-oulet{
+  font-family: "Roboto",sans-serif;
+  background-image: linear-gradient(to bottom,#FFFFFF,#EBEBEB);
+}
+// Small screens
+@media only screen {
+  // ------------------------------
+  //  Menu OffCanvas
+  // ------------------------------
+  @include menu-1;
+  @include offCanvas-1;
+  // ------------------------------
+  //  Home Page
+  // ------------------------------
+  @include home-3;
+
+  // ------------------------------
+  //  articles page
+  // ------------------------------
+
+  // @include content-1;
+
+  // ------------------------------
+  // post detail page
+  // ------------------------------
+
+    .post-detail{
+      .blog-post{
+        .blog-title{
+          text-align: center;
+          padding: 0.6em;
+          h3{
+            font-size: 2rem;
+          }
+          .author{
+            font-style: italic;
+            color: #9E9E9E;
+            font-size: 0.9em;
+          }
+          .label{
+            font-size: 0.9em;
+          }
+        }
+
+        .blog-img{
+          img{
+            border: none;
+            width: 100%;
+          }
+        }
+
+        .blog-content{
+          .title{
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 0.5em;
+            text-align: center;
+          }
+          .content{
+            padding: 0 0.5em;
+            font-size: 1rem;
+            font-weight: 200;
+            color: #2F2F2F;
+          }
+        }
+
+        .blog-sign{
+          .sign{
+            font-style: italic;
+            color: #9E9E9E;
+            font-size: 1em;
+            font-style: italic;
+            span{
+              color: #2F97FF;
+            }
+          }
+          .social{
+            span{
+              cursor: pointer;
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+      .sidebar{
+        .sidebar-img{
+          position: relative;
+          padding-top: -1em;
+          padding: 0 0 1.5em 6.5em;
+          img{
+            width: 120px;
+          	height: 120px;
+          	border-radius: 150px;
+          	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+          }
+        }
+        .sidebar-title{
+          h5{
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+          }
+        }
+        .content{
+          padding: 0.5em;
+          font-size: 0.8rem;
+          font-weight: 200;
+          color: #2F2F2F;
+          span{
+            font-style: italic;
+            font-size: 1rem;
+            color: #2F97FF;
+          }
+        }
+        .social{
+          span{
+            color: #2F97FF;
+            background: none;
+            cursor: pointer;
+            font-size: 1.4rem;
+            &:hover{
+              color: white;
+              background: #2F97FF;
+            }
+          }
+        }
+      }
+    }
+
+    // ------------------------------
+    // management page
+    // ------------------------------
+    .tools{
+
+      .section{
+        h3{
+          text-align: center;
+          font-size: 1.6rem;
+          color: #2F2F2F;
+        }
+        h5{
+          text-align: center;
+          font-size: 1.2rem;
+          color: #2F2F2F;
+        }
+      }
+      .thumbnail{
+        border-radius: 150px;
+        img{
+          width: 80px;
+          height: 80px;
+          border-radius: 150px;
+        }
+      }
+      .tool-title{
+        .lead{
+          font-family: "Roboto",sans-serif;
+          font-size: 1.8em;
+          padding: 0 0.7em;
+          color: #2F2F2F;
+        }
+        i{
+          font-size: 1.6rem;
+        }
+      }
+      .tool-content{
+        .subheader{
+          font-family: "Roboto",sans-serif;
+          font-size: 1em;
+        }
+      }
+
+      .tool-detail{
+        padding: 0 1em 1em 0;
+        span{
+          display: block;
+          font-size: 0.9em;
+          color: #9E9E9E;
+          background: none;
+        }
+      }
+    }
+
+    // ------------------------------
+    // post management page
+    // ------------------------------
+    .post-management{
+
+      .event {
+        padding: 0.5em;
+        display: table;
+        border-bottom: 2px solid #eee;
+      }
+
+      .event-date {
+        width: 6rem;
+        padding: 0 auto 1rem;
+        display: table-cell;
+        width: auto;
+
+        .event-month {
+          padding: 0;
+          background: #eee;
+          padding: 0.5rem 2rem;
+          text-align: center;
+        }
+
+        .event-day {
+          padding: 0;
+          border: 1px solid #eee;
+          padding: 0 2rem;
+          text-align: center;
+          font-size: 2rem;
+        }
+      }
+
+      .event-desc {
+        padding: 0 0 0 1rem;
+        text-align: left;
+        display: table-cell;
+        vertical-align: top;
+
+        .event-desc-header {
+          padding: 0 0 0.5rem 0;
+          padding: 0;
+        }
+
+        .event-desc-detail {
+          padding: 0 0 0.25rem;
+          padding: 0;
+        }
+
+        .event-desc-time {
+          color: solid #eee;
+          font-weight: 200;
+          font-size: 0.8rem;
+        }
+
+        .rsvp.button {
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          padding: 0;
+        }
+      }
+
+      .section{
+
+        h3{
+          text-align: center;
+          font-size: 1.6rem;
+          color: #2F2F2F;
+        }
+        h5{
+          text-align: center;
+          font-size: 1.2rem;
+          color: #2F2F2F;
+        }
+      }
+      .action{
+        padding-left: 1em;
+      }
+    }
+
+    // ------------------------------
+    // add-edit-post
+    // ------------------------------
+
+    .add-edit-post{
+      .section{
+
+        h3{
+          text-align: center;
+          font-size: 1.6rem;
+          color: #2F2F2F;
+        }
+        h5{
+          text-align: center;
+          font-size: 1.2rem;
+          color: #2F2F2F;
+        }
+      }
+      .action{
+        padding-top: 1em;
+      }
+    }
+
+
+  // ------------------------------
+  @include footer-4;
+
+} /* Define mobile styles */
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/*@media only screen and (max-width: 40em) { } */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+  .back1{
+    border: 2px solid green;
+  }
+
+  @include menu-2;
+  @include offCanvas-1;
+  // @include content-2;
+  @include footer-4;
+
+} /* min-width 641px, medium screens */
+
+ /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/*@media only screen and (min-width: 40.063em) and (max-width: 64em) { }*/
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+  @include menu-4;
+  @include home-3;
+  @include asoc-3;
+  @include footer-4;
+} /* min-width 1025px, large screens */
+
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+/*@media only screen and (min-width: 64.063em) and (max-width: 90em) { } */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) {
+  @include menu-4;
+
+} /* min-width 1441px, xlarge screens */
+
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/*@media only screen and (min-width: 90.063em) and (max-width: 120em) { } */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) {
+  @include menu-4;
+
+} /* min-width 1921px, xxlarge screens */
