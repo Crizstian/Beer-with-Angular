@@ -1,4 +1,8 @@
+server/
 server/node_modules
 client/bower_components
 client/node_modules
 client/dist
+client/app/img/asociados
+client/app/img/v1
+client/app/img/v2
