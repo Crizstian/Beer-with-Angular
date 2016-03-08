@@ -1,0 +1,8 @@
+<div class="row" data-equalize-on="medium" data-equalizer="foo" data-resize="foo" data-events="resize">
+  <div class="medium-12 columns"
+      *ngFor="#asociado of getAsociados
+              | async
+              | searchAsociado: status">
+    <asociado-item [asociado]="asociado"></asociado-item>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<select #sel (change)="what(sel.value)">
+  <option [value]="0">Seleccionar Todos</option>
+  <option [value]="asociado.id" *ngFor="#asociado of getAsociados | async">{{asociado.nombre}}</option>
+</select>

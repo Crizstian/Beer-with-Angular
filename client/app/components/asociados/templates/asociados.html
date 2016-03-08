@@ -8,60 +8,14 @@
 
   <div class="row">
     <div class="large-6 large-centered columns">
+      <p><a data-open="exampleModal1">Click me for a modal</a></p>
       <label>Seleccionar Asociado
-        <select #sel (change)="what(sel.value)">
-          <option [value]="0">Seleccionar Todos</option>
-          <option [value]="asociado.id" *ngFor="#asociado of getAsociados | async">{{asociado.nombre}}</option>
-        </select>
+        <asociado-select (select)="status = $event"></asociado-select>
       </label>
     </div>
   </div>
 
-  <div [hidden]="asociado_uno === 0">
-    <h1>ORA PERROS!</h1>
-    <h3>{{asociado}}</h3>
-  </div>
-
-
-  <div [hidden]="asociado_uno !== 0" class="expanded row asoc1">
-
-    <div class="row" data-equalize-on="medium" data-equalizer="foo" data-resize="foo" data-events="resize">
-
-      <div class="medium-12 columns" *ngFor="#asociado of getAsociados | async">
-        <div class="row">
-          <div class="medium-6 columns">
-            <div class="callout bar" data-equalizer-watch="foo" data-equalizer="bar" style="height: 900px;" data-resize="bar" data-events="resize">
-              <div class="callout " data-equalizer-watch="bar" style="height: 400px;">
-                <img src="../app/img/{{asociado.logo}}" alt="asociado 1" />
-              </div>
-              <div class="callout " data-equalizer-watch="bar" style="height: 410px;">
-                <p class="title">
-                   {{asociado.nombre}}
-                </p>
-                <p class="description">
-                  {{asociado.texto}}
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="medium-6 columns">
-            <div class="callout bar" data-equalizer-watch="foo" data-equalizer="bar" style="height: 900px;" data-resize="bar" data-events="resize">
-              <div class="callout " data-equalizer-watch="bar" style="height: 400px;">
-                <img src="../app/img/{{asociado.imagenes[0]}}" alt="asociado 1" />
-              </div>
-              <div class="callout " data-equalizer-watch="bar" style="height: 410px;">
-                <p class="title">
-                   Contacto
-                </p>
-                <p class="description">
-                  Correo: {{asociado.contacto.correo}} <br><br>
-                  Teléfono: {{asociado.contacto.telefono}}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="expanded row asoc1">
+    <asociado-list [status]="status"></asociado-list>
   </div>
 </div>

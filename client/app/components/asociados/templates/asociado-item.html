@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="medium-6 columns">
+    <div class="callout bar" data-equalizer-watch="foo" data-equalizer="bar" style="height: 900px;" data-resize="bar" data-events="resize">
+      <div class="callout " data-equalizer-watch="bar" style="height: 400px;">
+        <img src="../app/img/{{asociado.logo}}" alt="asociado 1" />
+      </div>
+      <div class="callout " data-equalizer-watch="bar" style="height: 410px;">
+        <p class="title">
+           {{asociado.nombre}}
+        </p>
+        <p class="description">
+          {{asociado.texto}}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="medium-6 columns">
+    <div class="callout bar" data-equalizer-watch="foo" data-equalizer="bar" style="height: 900px;" data-resize="bar" data-events="resize">
+      <div class="callout " data-equalizer-watch="bar" style="height: 400px;">
+        <img src="../app/img/{{asociado.imagenes[0]}}" alt="asociado 1" />
+      </div>
+      <div class="callout " data-equalizer-watch="bar" style="height: 410px;">
+        <p class="title">
+           Contacto
+        </p>
+        <p class="description">
+          Correo: {{asociado.contacto.correo}} <br><br>
+          Teléfono: {{asociado.contacto.telefono}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
