@@ -1,47 +1,136 @@
 @mixin intro {
   // background: #EBEBEB;
   padding: 2em;
-  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.65);
+  // box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.65);
   img{
     width: 100%;
-    height: 45vh;
+    height: 40vh;
   }
   .description{
-    height: 60vh;
-    overflow: scroll;
+  }
+}
+
+@mixin asoc-2 {
+  .asociados{
+    .selector{
+      span{
+        font-family: 'Bad Script', cursive;
+        font-size: 2.2rem;
+        text-align: center;
+        color: black;
+        border-bottom: 4px solid #CC9029;
+      }
+    }
+    .asoc1{
+      @include intro;
+      padding: 0em;
+      .callout{
+        border: none;
+      }
+      .foo{
+        border: 0px solid #EBEBEB;
+        box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+        height: auto;
+      }
+      .bar{
+        height: auto;
+      }
+      .title{
+        font-family: 'Bad Script', cursive;
+        font-size: 2.1rem;
+        text-align: center;
+        color: black;
+        border-bottom: 4px solid #CC9029;
+        i{
+          font-size: 1.4rem;
+        }
+      }
+      .description{
+        padding: 0.7em 0;
+        text-align: justify;
+        font-size: 1.2rem;
+        font-weight: 200;
+        i{
+          font-size: 1.6rem;
+        }
+      }
+      .descriptions{
+        padding: 3em 0 0em 1em;
+        font-size: 1.1rem;
+        font-weight: 200;
+        a{
+          color: #281c08;
+          &:hover{
+            color: #CC9029;
+          }
+        }
+      }
+    }
   }
 }
 
 @mixin asoc-3 {
   .asociados{
-    .asoc1{
-      @include intro;
-      padding: 3em;
-      .callout{
-        border: none;
-        // background: none;
-      }
-      .bar{
-        border: 0px solid #EBEBEB;
-        box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
-        // margin: 0.5em 0 0.5em 0;
-      }
-      .title{
-        font-family: 'Quicksand', sans-serif;
-        font-size: 2.3rem;
-        font-weight: 300;
+    .selector{
+      span{
+        font-family: 'Bad Script', cursive;
+        font-size: 2.6rem;
         text-align: center;
         color: black;
         border-bottom: 4px solid #CC9029;
       }
-      .description,.descriptions{
-        font-family: 'Quicksand', sans-serif;
-        padding: 1.5em;
-        font-size: 1.1rem;
-        font-weight: 200;
+    }
+    .asoc1{
+      @include intro;
+      padding: 3em;
+      .owl-demo .item{
+        // margin: 3px;
+      }
+      .owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: 45vh;
+      }
+      .callout{
+        border: none;
+      }
+      .foo{
+        border: 0px solid #EBEBEB;
+        box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+        height: 880px;
+      }
+      .bar{
+        height: 430px;
+      }
+      .title{
+        font-family: 'Bad Script', cursive;
+        font-size: 2.6rem;
+        text-align: center;
+        color: black;
+        border-bottom: 4px solid #CC9029;
+        i{
+          font-size: 1.4rem;
+        }
       }
       .description{
+        padding: 1.5em;
         text-align: justify;
+        font-size: 1.1rem;
+        font-weight: 200;
+        i{
+          font-size: 1.6rem;
+        }
+      }
+      .descriptions{
+        padding:3em 0 0em 3em;
+        font-size: 1.4rem;
+        font-weight: 200;
+        a{
+          color: #281c08;
+          &:hover{
+            color: #CC9029;
+          }
+        }
       }
     }
   }

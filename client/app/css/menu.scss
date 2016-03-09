@@ -1,98 +1,78 @@
-$background: #1E1E1E;
+$background: none;
 $height: 12vh;
 
-@mixin title-bar-title {
-  color: white;
-  font-size: 1.2rem;
-}
-
 @mixin menu-1 {
-  .title-bar{
-    border: 2px solid yellow;
-    z-index: 2;
-
-    background: $background;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    .title-bar-left{
-      padding-top: 18px;
-      padding-left: 10px;
-      button{
-        padding-left: 12px;
-      }
-      .title-bar-title{
-       @include title-bar-title;
+  .header{
+    .callout{
+      background: none;
+      border: none;
+    }
+    .menu{
+      a{
+        padding-top: 1.1em;
+        font-size: 1.4rem;
+        color: #2D2D2D;
+        text-transform: uppercase;
+        border-bottom: 0.02em solid #C59C64;
+        &:hover{
+          border-bottom: 0.1em solid #CC9029;
+        }
+        i{
+          padding-right: 1em;
+        }
       }
     }
-    .title-bar-right{
-      padding-top: 12px;
-      padding-right: 20px;
-      span{
-        color: white;
-        font-size: 1.2rem;
+    .top-bar{
+      background: $background;
+      ul{
+        background: $background;
       }
-      h5{
-        font-size: 0.8rem;
+    }
+    .title-bar{
+      border: 0px solid yellow;
+      background: #896d46;
+      .title-bar-left{
+        padding-top: 18px;
+        padding-left: 10px;
+        button{
+          padding-left: 12px;
+        }
       }
     }
   }
 }
 
 @mixin menu-2 {
-  .top-bar{
-    border: 2px solid green;
-    z-index: 2;
-    height: $height - 4;
-    background: $background;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    .title-bar-left{
-      padding-top: 9px;
-      padding-left: 1.5em;
-      button{
-        padding-left: 12px;
-      }
-      .title-bar-title{
-       @include title-bar-title;
+  .header{
+    border-top: 13px solid #EBEBEB;
+    .callout{
+      height: 30vh;
+    }
+    .top-bar{
+      background: $background;
+      ul{
+        background: $background;
       }
     }
-    .title-bar-right{
-      padding-top: 5px;
-      padding-right: 1.5em;
-      span{
-        color: white;
-        font-size: 1.2rem;
-      }
-      h5{
-        font-size: 0.8rem;
-      }
+    .img{
+      position: relative;
+      width: 40vw;
+      // height: 40vh;
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
     }
-  }
-}
-
-@mixin menu-3 {
-  .top-bar{
-    border: 2px solid red;
-
-    background: $background;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-    .title-bar-left{
-      padding-top: 18px;
-      padding-left: 10px;
-      button{
-        padding-left: 12px;
-      }
-      .title-bar-title{
-       @include title-bar-title;
-      }
-    }
-    .title-bar-right{
-      padding-top: 12px;
-      padding-right: 20px;
-      span{
-        color: white;
-        font-size: 1.2rem;
-      }
-      h5{
-        font-size: 0.8rem;
+    .menu{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding-bottom: 0em;
+      a{
+        font-size: 1.4rem;
+        color: #2D2D2D;
+        text-transform: uppercase;
+        border-bottom: 0em solid #C59C64;
+        &:hover{
+          border-bottom: 3px solid #CC9029;
+        }
       }
     }
   }
@@ -102,9 +82,13 @@ $height: 12vh;
   .header{
     border-top: 13px solid #EBEBEB;
     .callout{
-      background: none;
-      border: none;
       height: 30vh;
+    }
+    .top-bar{
+      background: $background;
+      ul{
+        background: $background;
+      }
     }
     .img{
       position: relative;
@@ -122,6 +106,7 @@ $height: 12vh;
         font-size: 1.7rem;
         color: #2D2D2D;
         text-transform: uppercase;
+        border-bottom: 0em solid #C59C64;
         &:hover{
           border-bottom: 3px solid #CC9029;
         }

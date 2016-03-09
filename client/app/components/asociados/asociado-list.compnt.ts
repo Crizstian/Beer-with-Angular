@@ -37,7 +37,7 @@ export class AsociadoList {
 
 
   ngOnInit() {
-    jQuery(this._elementRef.nativeElement).foundation();
+    // jQuery(this._elementRef.nativeElement).foundation();
 
     this._dispatcher.next(new AsociadoActions.Action({
       type: stateAction.REQUEST_DATA,

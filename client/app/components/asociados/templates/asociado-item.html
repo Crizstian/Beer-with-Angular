@@ -1,32 +1,49 @@
 <div class="row">
   <div class="medium-6 columns">
-    <div class="callout bar" data-equalizer-watch="foo" data-equalizer="bar" style="height: 900px;" data-resize="bar" data-events="resize">
+    <div class="callout foo" data-equalizer-watch="foo" data-equalizer="bar" data-resize="bar" data-events="resize">
       <div class="callout " data-equalizer-watch="bar" style="height: 400px;">
         <img src="../app/img/{{asociado.logo}}" alt="asociado 1" />
       </div>
-      <div class="callout " data-equalizer-watch="bar" style="height: 410px;">
-        <p class="title">
-           {{asociado.nombre}}
-        </p>
-        <p class="description">
-          {{asociado.texto}}
-        </p>
+      <div class="callout bar" data-equalizer-watch="bar">
+        <div class="row">
+          <p class="title">
+            <i class="mdi mdi-beer"></i> {{asociado.nombre}}
+          </p>
+        </div>
+        <div class="row">
+          <div class="small-3 small-centered columns" style="border-bottom: 3px solid #CC9029;"></div>
+        </div>
+        <div class="row">
+          <p class="description">
+            {{asociado.texto}}
+          </p>
+        </div>
       </div>
     </div>
   </div>
   <div class="medium-6 columns">
-    <div class="callout bar" data-equalizer-watch="foo" data-equalizer="bar" style="height: 900px;" data-resize="bar" data-events="resize">
+    <div class="callout foo" data-equalizer-watch="foo" data-equalizer="bar" data-resize="bar" data-events="resize">
       <div class="callout " data-equalizer-watch="bar" style="height: 400px;">
-        <img src="../app/img/{{asociado.imagenes[0]}}" alt="asociado 1" />
+        <a data-open="asociado.id">
+          <img src="../app/img/{{asociado.imagenes[0]}}" alt="asociado 1" />
+        </a>
+
       </div>
-      <div class="callout " data-equalizer-watch="bar" style="height: 410px;">
-        <p class="title">
-           Contacto
-        </p>
-        <p class="description">
-          Correo: {{asociado.contacto.correo}} <br><br>
-          Teléfono: {{asociado.contacto.telefono}}
-        </p>
+      <div class="callout bar" data-equalizer-watch="bar" >
+        <div class="row">
+          <p class="title">
+            <i class="mdi mdi-account-location"></i> Contacto
+          </p>
+        </div>
+        <div class="row">
+          <div class="small-3 small-centered columns" style="border-bottom: 3px solid #CC9029;"></div>
+        </div>
+        <div class="row">
+          <p class="descriptions">
+            <i class="mdi mdi-email"></i> <a href="mailto:{{asociado.contacto.correo}}" target="_blank">{{asociado.contacto.correo}}</a> <br><br>
+            <i class="mdi mdi-phone"></i> <span>{{asociado.contacto.telefono}}</span>
+          </p>
+        </div>
       </div>
     </div>
   </div>

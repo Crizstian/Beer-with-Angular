@@ -1,40 +1,46 @@
 <div class="header">
-  <div class="expanded row small-up-1 medium-up-2" data-equalizer data-equalize-by-row="true">
-    <div class="column">
+  <div class="expanded row" data-equalizer data-equalize-by-row="true">
+    <div class="large-6 column">
       <div class="callout" data-equalizer-watch="" style="">
         <div class="img">
           <img src="../app/img/v2/logo.png" alt="" />
         </div>
       </div>
     </div>
-    <div class="column show-for-medium">
+    <div class="large-6 column">
       <div class="callout" data-equalizer-watch="" style="">
-        <ul class="menu">
-          <li>
-            <a [routerLink]="['/Home']" >
-             Home
-            </a>
-          </li>
-          <li>
-            <a [routerLink]="['/Asociados']" >
-              Asociados
-            </a>
-          </li>
-          <li>
-            <a [routerLink]="['/Nosotros']" >
-              Nosotros
-            </a>
-          </li>
-          <li>
-            <a [routerLink]="['/Contacto']" >
-               Contacto
-            </a>
-          </li>
-        </ul>
+
+        <div class="title-bar show-for-small-only" data-responsive-toggle="example-menu">
+          <button class="menu-icon" type="button" data-toggle></button>
+          <div class="title-bar-title">Menu</div>
+        </div>
+
+        <div class="top-bar" id="example-menu">
+          <div class="top-bar-left">
+            <ul class="vertical medium-horizontal menu">
+              <li>
+                <a [routerLink]="['/Home']" >
+                 <span class="show-for-small-only"><i class="mdi mdi-home"></i></span> Home
+                </a>
+              </li>
+              <li>
+                <a [routerLink]="['/Asociados']" >
+                <span class="show-for-small-only"><i class="mdi mdi-library"></i></span> Asociados
+                </a>
+              </li>
+              <li>
+                <a [routerLink]="['/Nosotros']" >
+                  <span class="show-for-small-only"><i class="mdi mdi-account-multiple"></i></span> Nosotros
+                </a>
+              </li>
+              <li>
+                <a [routerLink]="['/Contacto']" >
+                   <span class="show-for-small-only"><i class="mdi mdi-account-box"></i></span> Contacto
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
     </div>
-  </div>
-  <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle></button>
-    <div class="title-bar-title">Menu</div>
   </div>
 </div>

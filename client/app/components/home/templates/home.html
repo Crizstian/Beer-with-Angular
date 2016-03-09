@@ -10,14 +10,14 @@
   </div>
   <div class="expanded row home3">
     <div class="row">
-      <div class="small-3 small-centered">
-        <h2 align="center">Asociados</h2>
+      <div class="small-6 small-centered">
+        <h2>Asociados</h2>
       </div>
     </div>
-    <div id="owl-demo">
-    <div class="item" *ngFor="#asociado of getAsociados | async">
-      <img src="../app/img/{{asociado.logo}}" alt="" />
-    </div>
+    <div id="owl-demo-home" class="owl-demo">
+      <div class="item" *ngFor="#asociado of getAsociados | async">
+        <img src="../app/img/{{asociado.logo}}" alt="" />
+      </div>
     </div>
   </div>
   <br>
@@ -54,7 +54,7 @@
       </div>
       <div class="row">
         <p class="title">
-          Noticias
+          Tienda en linea
         </p>
       </div>
     </div>
@@ -81,7 +81,7 @@
       </div>
       <div class="row">
         <p class="title">
-          Contacto
+          Noticias
         </p>
       </div>
     </div>

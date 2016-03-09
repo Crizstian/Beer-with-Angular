@@ -18,4 +18,5 @@ export class AsociadosCompnt{
   ngOnInit() {
     jQuery(this._elementRef.nativeElement).foundation();
   }
+  
 }

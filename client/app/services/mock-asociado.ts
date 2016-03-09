@@ -7,6 +7,7 @@ export var ASOCIADOS:Cervecero[] = [
     logo: 'asociados/La_mulata/1.jpg',
     texto: 'CincoMulatas Es una marca de cerveza  completamente familiar, nacida en el centro histórico de morelia e inspirada en la vieja leyenda de "La Pila de La  Mulata".',
     imagenes : [
+      "asociados/La_mulata/1.jpg",
       "asociados/La_mulata/2.jpg"
     ],
     contacto: {
@@ -20,7 +21,11 @@ export var ASOCIADOS:Cervecero[] = [
    logo: "asociados/Rodilla_del_Diablo/logo.jpg",
    texto: 'Somos una cervecería local e independiente, producimos cervezas artesanales empleando solamente ingredientes naturales de la cerveza.',
    imagenes : [
-     "asociados/Rodilla_del_Diablo/botella.jpg"
+     "asociados/Rodilla_del_Diablo/botella.jpg",
+     "asociados/Rodilla_del_Diablo/1.jpg",
+     "asociados/Rodilla_del_Diablo/2.jpg",
+     "asociados/Rodilla_del_Diablo/3.jpg",
+     "asociados/Rodilla_del_Diablo/4.jpg"
    ],
    contacto: {
     telefono: '4521169797',
@@ -33,7 +38,13 @@ export var ASOCIADOS:Cervecero[] = [
  logo: "asociados/Xakua/logo.jpg",
  texto: 'Cerveza artesanal moreliana, realizamos 3 estilos: Stout de Avena, Stout de Café de olla y Ambar Ale.',
  imagenes : [
-   "asociados/Xakua/botella.jpg"
+   "asociados/Xakua/botella.jpg",
+   "asociados/Xakua/1.jpg",
+   "asociados/Xakua/2.jpg",
+   "asociados/Xakua/3.jpg",
+   "asociados/Xakua/4.jpg",
+   "asociados/Xakua/5.jpg",
+   "asociados/Xakua/6.jpg"
  ],
  contacto: {
    telefono: '4432269017',
@@ -45,7 +56,13 @@ export var ASOCIADOS:Cervecero[] = [
 logo: "asociados/Nacional_Morelos/logo.jpg",
 texto: 'Cerveceria Nacional Morelos es una marca dedicada a cervezas artesanales faciles al paladar, elaboradas en Morelia, Michoacán.',
 imagenes : [
-  "asociados/Nacional_Morelos/botella.jpg"
+  "asociados/Nacional_Morelos/botella.jpg",
+  "asociados/Nacional_Morelos/1.jpg",
+  "asociados/Nacional_Morelos/2.jpg",
+  "asociados/Nacional_Morelos/3.jpg",
+  "asociados/Nacional_Morelos/4.jpg",
+  "asociados/Nacional_Morelos/5.jpg",
+  "asociados/Nacional_Morelos/6.jpg"
 ],
 contacto: {
   telefono: '4433127839',
