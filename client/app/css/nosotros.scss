@@ -1,0 +1,101 @@
+@mixin nosotros-1 {
+  .nosotros{
+    padding: 1em;
+    .foo{
+      padding: 1em;
+      border: 0px solid #EBEBEB;
+      // background-image: linear-gradient(to bottom,#FFFFFF,#fbfbfb);
+      box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+    }
+    .title{
+      font-family: 'Bad Script', cursive;
+      font-size: 2.3rem;
+      text-align: center;
+      color: black;
+      border-bottom: 4px solid #CC9029;
+    }
+    .description,.descriptions{
+      padding: 0.5em;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 200;
+    }
+    .description{
+      text-align: justify;
+    }
+    img{
+      position: relative;
+      left: 12%;
+      border: 8px solid #EBEBEB;
+      width: 70%;
+      height: 40vh;
+    }
+  }
+}
+
+@mixin nosotros-2 {
+  .nosotros{
+    padding: 1em;
+    .foo{
+      padding: 1em;
+      border: 0px solid #EBEBEB;
+      // background-image: linear-gradient(to bottom,#FFFFFF,#fbfbfb);
+      box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+    }
+    .title{
+      font-family: 'Bad Script', cursive;
+      font-size: 2.3rem;
+      text-align: center;
+      color: black;
+      border-bottom: 4px solid #CC9029;
+    }
+    .description,.descriptions{
+      padding: 0.5em;
+      font-size: 1.1rem;
+      font-weight: 200;
+      font-family: 'PT Sans', sans-serif;
+    }
+    .description{
+      text-align: justify;
+    }
+    img{
+      position: relative;
+      left: 0%;
+      border: 8px solid #EBEBEB;
+      width: 90%;
+      height: 50vh;
+    }
+  }
+}
+
+@mixin nosotros-3 {
+  .nosotros{
+    padding: 1em;
+    .foo{
+      border: 0px solid #EBEBEB;
+      // background-image: linear-gradient(to bottom,#FFFFFF,#fbfbfb);
+      box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+    }
+    .title{
+      font-family: 'Bad Script', cursive;
+      font-size: 2.6rem;
+      text-align: center;
+      color: black;
+      border-bottom: 4px solid #CC9029;
+    }
+    .description,.descriptions{
+      padding: 0.8em;
+      font-size: 1.4rem;
+      font-weight: 200;
+    }
+    .description{
+      // text-align: justify;
+    }
+    img{
+      position: relative;
+      border: 8px solid #EBEBEB;
+      width: 85%;
+      height: 75vh;
+    }
+  }
+}

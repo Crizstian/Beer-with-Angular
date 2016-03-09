@@ -2,7 +2,7 @@
   .foot {
     border-top: 12px solid #d3d3d3;
     border-left: 12px solid #d3d3d3;
-    border-bottom: 12px solid #d3d3d3;
+    // border-bottom: 12px solid #d3d3d3;
     padding: 1em;
     .redes{
       li {
@@ -15,9 +15,13 @@
     }
     .title{
       font-weight: 600;
+      font-size: 1.3em;
+      font-family: 'PT Sans', sans-serif;
     }
     .description{
       font-weight: 500;
+      font-family: 'PT Sans', sans-serif;
+      padding-left: 1em;
     }
   }
 }

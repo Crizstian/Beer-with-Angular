@@ -1,8 +1,7 @@
 @import "menu";
-@import "offCanvas";
+@import "nosotros";
 @import "home";
 @import "asociados";
-@import "categories";
 @import "footer";
 
 .data-oulet{
@@ -13,6 +12,8 @@
 @media only screen {
   @include menu-1;
   @include home-1;
+  @include asoc-1;
+  @include nosotros-1;
   @include footer-4;
 
 } /* Define mobile styles */
@@ -28,6 +29,7 @@
   @include menu-2;
   @include home-2;
   @include asoc-2;
+  @include nosotros-2;
   @include footer-4;
 
 } /* min-width 641px, medium screens */
@@ -43,6 +45,7 @@
   @include menu-4;
   @include home-3;
   @include asoc-3;
+  @include nosotros-3;
   @include footer-4;
 } /* min-width 1025px, large screens */
 
