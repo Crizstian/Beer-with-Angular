@@ -8,6 +8,7 @@
     .presentacion{
       width: 100%;
       height: auto;
+      padding-left: 1.5em;
     }
     .home3{
       padding: 2em;
@@ -45,7 +46,7 @@
     img{
       border: 8px solid #EBEBEB;
       width: 100%;
-      height: 35vh;
+      height: 30vh;
     }
   }
 
@@ -64,7 +65,7 @@
     img{
       border: 8px solid #EBEBEB;
       width: 100%;
-      height: 35vh;
+      height: 30vh;
     }
   }
 }
@@ -74,7 +75,7 @@
     padding: 1.5em;
     .presentacion{
       width: 100%;
-      height: 60vh;
+      height: auto;
       overflow: hidden;
     }
     .home3{
@@ -146,6 +147,9 @@
       width: 100%;
       height: 60vh;
       overflow: hidden;
+      img{
+        margin-top: -3em;
+      }
     }
     .home3{
       @include intro;
@@ -161,7 +165,7 @@
       .owl-demo .item img{
         display: block;
         width: 100%;
-        height: 30vh;
+        height: 35vh;
       }
     }
   }
@@ -175,7 +179,7 @@
     img{
       border: 8px solid #EBEBEB;
       width: 100%;
-      height: 35vh;
+      height: 40vh;
     }
   }
 
@@ -189,7 +193,7 @@
     img{
       border: 8px solid #EBEBEB;
       width: 100%;
-      height: 35vh;
+      height: 40vh;
     }
   }
 }

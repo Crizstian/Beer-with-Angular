@@ -1,13 +1,15 @@
-<div class="contacto">
+<div class="principal">
   <div class="expanded row">
     <div class="presentacion">
-      <div class="large-6 large-centered columns">
-        <img src="../app/img/v2/Contacto1.jpg" alt="Owl Image">
-      </div>
+      <img class="show-for-large" src="../app/img/v3/extra/Lay11.jpg" alt="Owl Image">
+      <img class="show-for-medium-only" src="../app/img/v3/mediano/Lay11.jpg" alt="Owl Image">
+      <img class="show-for-small-only" src="../app/img/v3/small/Lay11.jpg" alt="Owl Image">
     </div>
   </div>
-  <br>
+</div>
 
+<div class="contacto">
+  <br>
   <div class="row">
     <div class="large-12 columns home">
       <p align="center" class="title">
@@ -18,36 +20,52 @@
   <div class="row formulario">
     <div class="small-12 columns">
       <div class="large-12 columns">
-        <form data-abide action="php/mail.php" method="post" accept-charset="utf-8">
+        <form novalidate data-abide method="post" accept-charset="utf-8">
           <div class="row">
             <div class="medium-6 columns">
               <label><span><i class="mdi mdi-account"></i> Nombre</span>
-                <input type="text" placeholder="Juan Colorado">
+                <input type="text" id="nombre" [ngFormControl]="group.find('nombre')" [(ngModel)]="formulario.nombre" placeholder="Juan Colorado">
               </label>
+              <ul *ngIf="group.find('nombre').dirty && !group.find('nombre').valid">
+                <li *ngIf="group.hasError('required', 'nombre')">Este campo es necesario</li>
+                <li *ngIf="group.hasError('textFormat', 'nombre')">Este campo tiene valores no validos o necesita al menos 3 caracteres</li>
+              </ul>
             </div>
             <div class="medium-6 columns">
               <label><span><i class="mdi mdi-at"></i> Correo Electronico</span>
-                <input type="email" placeholder="email@mail.com">
+                <input type="text" id="email" [ngFormControl]="group.find('email')" [(ngModel)]="formulario.email" placeholder="email@mail.com">
               </label>
+              <ul *ngIf="group.find('email').dirty && !group.find('email').valid">
+                <li *ngIf="group.hasError('required', 'email')">Este campo es necesario</li>
+                <li *ngIf="group.hasError('emailFormat', 'email')">Este campo no contiene un email valido</li>
+              </ul>
             </div>
           </div>
           <div class="row">
             <div class="medium-12 columns">
               <label><span><i class="mdi mdi-beer"></i> Asunto</span>
-                <input type="text" placeholder="Asunto">
+                <input type="text" id="asunto" [ngFormControl]="group.find('asunto')" [(ngModel)]="formulario.asunto" placeholder="cotización de ..., informe sobre ...">
               </label>
+              <ul *ngIf="group.find('asunto').dirty && !group.find('asunto').valid">
+                <li *ngIf="group.hasError('required', 'asunto')">Este campo es necesario</li>
+                <li *ngIf="group.hasError('textFormat', 'asunto')">Este campo tiene valores no validos o necesita al menos 3 caracteres</li>
+              </ul>
             </div>
           </div>
           <div class="row">
             <div class="medium-12 columns">
               <label><span><i class="mdi mdi-book-open"></i> Mensaje</span>
-                <textarea name="name" rows="8" cols="40" placeholder="algun comentario..."></textarea>
+                <textarea id="mensaje" [ngFormControl]="group.find('mensaje')" [(ngModel)]="formulario.mensaje" rows="8" cols="40" placeholder="algun comentario..."></textarea>
               </label>
+              <ul *ngIf="group.find('mensaje').dirty && !group.find('mensaje').valid">
+                <li *ngIf="group.hasError('required', 'mensaje')">Este campo es necesario</li>
+                <li *ngIf="group.hasError('textFormat', 'mensaje')">Este campo tiene valores no validos o necesita al menos 15 caracteres</li>
+              </ul>
             </div>
           </div>
           <div class="row">
             <div class="medium-12 columns">
-              <button type="submit" class="expanded warning button " name="button">
+              <button (click)="submitForm()" type="submit" class="expanded warning button " name="button">
                 <i class="mdi mdi-send"></i> Enviar
               </button>
             </div>
