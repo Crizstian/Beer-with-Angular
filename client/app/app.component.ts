@@ -7,6 +7,7 @@ import {HomeCompnt}                     from './components/home/home.compnt';
 import {AsociadosCompnt}                from './components/asociados/asociados.compnt';
 import {ContactCompnt}                  from './components/contact/contact.compnt';
 import {NosotrosCompnt}                 from './components/nosotros/nosotros.compnt';
+import {AsociadoViewCompnt}             from './components/asociados/asociado-view.compnt';
 import {AsociadoService}                from './services/asociado.service';
 import {Logger}                         from './services/Logger.service';
 
@@ -22,6 +23,7 @@ declare var foundation:any;
 @RouteConfig([
   {path: '/',          as: 'Home',      component: HomeCompnt, useAsDefault: true},
   {path: '/asociados', as: 'Asociados', component: AsociadosCompnt},
+  {path: '/asociados/:id', as: 'Asociado', component: AsociadoViewCompnt},
   {path: '/nosotros',  as: 'Nosotros',  component: NosotrosCompnt},
   {path: '/contacto',  as: 'Contacto',  component: ContactCompnt}
 ])

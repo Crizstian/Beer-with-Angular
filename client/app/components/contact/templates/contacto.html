@@ -1,54 +1,60 @@
-<div class="vertical grid-block">
-  <div class="grid-block align-center principal">
-    <img src="assets/img/v2/Contacto1.jpg" alt="" />
+<div class="contacto">
+  <div class="expanded row">
+    <div class="presentacion">
+      <div class="large-6 large-centered columns">
+        <img src="../app/img/v2/Contacto1.jpg" alt="Owl Image">
+      </div>
+    </div>
   </div>
-</div>
+  <br>
 
-<div class="row">
-  <div class="large-12 columns home">
-    <p align="center" class="title">
-      Escríbenos
-    </p>
+  <div class="row">
+    <div class="large-12 columns home">
+      <p align="center" class="title">
+       Escríbenos ...<i class="mdi mdi-pen"></i>
+      </p>
+    </div>
   </div>
-</div>
-<div class="row home">
-  <div class="small-12 columns">
-    <div class="large-12 columns">
-      <form data-abide action="php/mail.php" method="post" accept-charset="utf-8">
-        <div class="row">
-          <div class="medium-12 columns">
-            <label>Nombre
-              <input type="text" placeholder="Juan Colorado">
-            </label>
+  <div class="row formulario">
+    <div class="small-12 columns">
+      <div class="large-12 columns">
+        <form data-abide action="php/mail.php" method="post" accept-charset="utf-8">
+          <div class="row">
+            <div class="medium-6 columns">
+              <label><span><i class="mdi mdi-account"></i> Nombre</span>
+                <input type="text" placeholder="Juan Colorado">
+              </label>
+            </div>
+            <div class="medium-6 columns">
+              <label><span><i class="mdi mdi-at"></i> Correo Electronico</span>
+                <input type="email" placeholder="email@mail.com">
+              </label>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="medium-12 columns">
-            <label>Correo Electronico
-              <input type="email" placeholder="email@mail.com">
-            </label>
+          <div class="row">
+            <div class="medium-12 columns">
+              <label><span><i class="mdi mdi-beer"></i> Asunto</span>
+                <input type="text" placeholder="Asunto">
+              </label>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="medium-12 columns">
-            <label>Asunto
-              <input type="text" placeholder="Asunto">
-            </label>
+          <div class="row">
+            <div class="medium-12 columns">
+              <label><span><i class="mdi mdi-book-open"></i> Mensaje</span>
+                <textarea name="name" rows="8" cols="40" placeholder="algun comentario..."></textarea>
+              </label>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="medium-12 columns">
-            <label>Mensaje
-              <textarea name="name" rows="8" cols="40" placeholder="algun comentario..."></textarea>
-            </label>
+          <div class="row">
+            <div class="medium-12 columns">
+              <button type="submit" class="expanded warning button " name="button">
+                <i class="mdi mdi-send"></i> Enviar
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="medium-12 columns">
-            <input class="expanded warning button " type="submit" value="Enviar">
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </div>
 </div>
+<br><br>

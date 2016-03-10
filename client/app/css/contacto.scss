@@ -1,0 +1,12 @@
+@mixin contacto-1 {
+  .formulario{
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    padding: 2em 0;
+    span{
+      padding: 0.5em;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 200;
+    }
+  }
+}

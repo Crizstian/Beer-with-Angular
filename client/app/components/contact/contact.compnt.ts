@@ -2,9 +2,6 @@ import {Component} from 'angular2/core';
 
 @Component({
   selector   : 'contact',
-  template   : '<p>contact seccion</p>'
-  // templateUrl: 'app/components/categories/template/categories.html'
+  templateUrl: 'app/components/contact/templates/contacto.html'
 })
-export class ContactCompnt{
-
-}
+export class ContactCompnt{}

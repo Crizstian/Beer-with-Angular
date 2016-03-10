@@ -16,7 +16,9 @@
     </div>
     <div id="owl-demo-home" class="owl-demo">
       <div class="item" *ngFor="#asociado of getAsociados | async">
-        <img src="../app/img/{{asociado.logo}}" alt="" />
+        <a [routerLink]="['/Asociado',{id: asociado.id}]" >
+          <img src="../app/img/{{asociado.logo}}" alt="" />
+        </a>
       </div>
     </div>
   </div>
@@ -28,7 +30,9 @@
 
     <div class="columns" data-equalizer-watch="" style="">
       <div class="row">
-        <a ui-sref="nosotros"><img src="../app/img/asociados/Casanova/1.jpg" alt="Owl Image"></a>
+        <a [routerLink]="['/Nosotros']" >
+          <img src="../app/img/asociados/Casanova/1.jpg" alt="Owl Image">
+        </a>
       </div>
       <div class="row">
         <p class="title">
@@ -39,7 +43,9 @@
 
     <div class="columns" data-equalizer-watch="" style="">
       <div class="row">
-        <a ui-sref="asociados"><img src="../app/img/asociados/Casanova/1.jpg" alt="Owl Image"></a>
+        <a [routerLink]="['/Asociados']" >
+          <img src="../app/img/asociados/Casanova/1.jpg" alt="Owl Image">
+        </a>
       </div>
       <div class="row">
         <p class="title">
@@ -50,7 +56,9 @@
 
     <div class="columns" data-equalizer-watch="" >
       <div class="row">
-          <a ui-sref="noticias"><img src="../app/img/asociados/Casanova/1.jpg" alt="Owl Image"></a>
+          <a data-open="tienda">
+            <img src="../app/img/asociados/Casanova/1.jpg" alt="Owl Image">
+          </a>
       </div>
       <div class="row">
         <p class="title">
@@ -67,17 +75,9 @@
   <div class="expanded row small-up-1 medium-up-2 home2" data-equalizer data-equalize-by-row="true">
     <div class="columns" data-equalizer-watch="" style="">
       <div class="row">
-        <a ui-sref="contacto"><img src="../app/img/v2/4.jpg" alt="Owl Image"></a>
-      </div>
-      <div class="row">
-        <p class="title">
-          Contacto
-        </p>
-      </div>
-    </div>
-    <div class="columns" data-equalizer-watch="" style="">
-      <div class="row">
-        <a ui-sref="contacto"><img src="../app/img/v2/4.jpg" alt="Owl Image"></a>
+        <a data-open="noticias">
+          <img src="../app/img/v2/4.jpg" alt="Owl Image">
+        </a>
       </div>
       <div class="row">
         <p class="title">
@@ -85,6 +85,36 @@
         </p>
       </div>
     </div>
+    <div class="columns" data-equalizer-watch="" style="">
+      <div class="row">
+        <a [routerLink]="['/Contacto']" >
+          <img src="../app/img/v2/Contacto1.jpg" alt="Owl Image">
+        </a>
+      </div>
+      <div class="row">
+        <p class="title">
+          Contacto
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 <br><br>
+
+<div class="reveal" id="tienda" data-reveal>
+  <h1>Cerarmich</h1>
+  <p class="lead">Gracias por vistarnos.</p>
+  <p>Tienda en linea proximamente!</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal" id="noticias" data-reveal>
+  <h1>Cerarmich</h1>
+  <p class="lead">Gracias por vistarnos.</p>
+  <p>Blog proximamente!</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

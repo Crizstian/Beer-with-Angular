@@ -77,7 +77,19 @@ para conocedores, que aprecian los sabores intensos y tienen gusto por el arte y
 En casa, nos vemos a nosotros mismos como los primeros clientes, con un sentido autocrítico, pues amamos lo que hacemos y
 queremos compartirlo con todos.`,
 imagenes : [
- "asociados/Malora/botella.jpg"
+ "asociados/Malora/botella.jpg",
+ "asociados/Malora/1.jpg",
+ "asociados/Malora/2.jpg",
+ "asociados/Malora/3.jpg",
+ "asociados/Malora/4.jpg",
+ "asociados/Malora/5.jpg",
+ "asociados/Malora/6.jpg",
+ "asociados/Malora/7.jpg",
+ "asociados/Malora/8.jpg",
+ "asociados/Malora/9.jpg",
+ "asociados/Malora/10.jpg",
+ "asociados/Malora/11.jpg",
+ "asociados/Malora/12.jpg"
 ],
 contacto: {
  telefono: '4432732825',
@@ -93,7 +105,13 @@ sabores a los cuales están poco familiarizados pero con ingredientes 100% natur
 
 cerveza de la mas alta calidad ante el mercado.`,
 imagenes : [
- "asociados/Cueva_Santa/botella.jpg"
+ "asociados/Cueva_Santa/botella.jpg",
+ "asociados/Cueva_Santa/1.jpg",
+ "asociados/Cueva_Santa/2.jpg",
+ "asociados/Cueva_Santa/3.jpg",
+ "asociados/Cueva_Santa/4.jpg",
+ "asociados/Cueva_Santa/5.jpg",
+ "asociados/Cueva_Santa/6.jpg"
 ],
 contacto: {
  telefono: '4432812813',
@@ -109,7 +127,17 @@ De igual manera, buscamos promover el consumo de calidad y responsable de la cer
 
 sabor y color que presentan los diferentes estilos de cervezas.`,
 imagenes : [
- "asociados/Rastrera/botella.jpg"
+ "asociados/Rastrera/botella.jpg",
+ "asociados/Rastrera/1.jpg",
+ "asociados/Rastrera/2.jpg",
+ "asociados/Rastrera/3.jpg",
+ "asociados/Rastrera/4.jpg",
+ "asociados/Rastrera/5.jpg",
+ "asociados/Rastrera/6.jpg",
+ "asociados/Rastrera/7.jpg",
+ "asociados/Rastrera/8.jpg",
+ "asociados/Rastrera/9.jpg",
+ "asociados/Rastrera/10.jpg"
 ],
 contacto: {
  telefono: '4431941527',
@@ -129,7 +157,21 @@ Aquí es donde se da una analogía con quienes prueban nuestra cerveza. Nuestros
 
 deciden ellos mismos liberar su paladar con nuevas experiencias, en este caso con nuestra marca.`,
 imagenes : [
- "asociados/Libertadores/botella.jpg"
+ "asociados/Libertadores/botella.jpg",
+ "asociados/Libertadores/1.jpg",
+ "asociados/Libertadores/2.jpg",
+ "asociados/Libertadores/3.jpg",
+ "asociados/Libertadores/4.jpg",
+ "asociados/Libertadores/5.jpg",
+ "asociados/Libertadores/6.jpg",
+ "asociados/Libertadores/7.jpg",
+ "asociados/Libertadores/8.jpg",
+ "asociados/Libertadores/9.jpg",
+ "asociados/Libertadores/10.jpg",
+ "asociados/Libertadores/11.jpg",
+ "asociados/Libertadores/12.jpg",
+ "asociados/Libertadores/13.jpg",
+ "asociados/Libertadores/14.jpg"
 ],
 contacto: {
  telefono: '013535333067.',
@@ -142,7 +184,15 @@ contacto: {
   logo: "asociados/Demonio/logo.jpg",
   texto: `Cerveza originaria de Uruapan, ofrecemos 4 estilos: Demonio Blanco (Hefeweizen), Demonio Rojo (Irish Red Ale), Demonio Café (Brown Porter) y Demonio Verde (American IPA).`,
   imagenes : [
-    "asociados/Demonio/botella.jpg"
+    "asociados/Demonio/botella.jpg",
+    "asociados/Demonio/1.jpg",
+    "asociados/Demonio/2.jpg",
+    "asociados/Demonio/3.jpg",
+    "asociados/Demonio/4.jpg",
+    "asociados/Demonio/5.jpg",
+    "asociados/Demonio/6.jpg",
+    "asociados/Demonio/7.jpg",
+    "asociados/Demonio/8.jpg"
   ],
   contacto: {
     telefono: '4521715506',
@@ -155,7 +205,11 @@ contacto: {
   logo: "asociados/Zurumuato/1.jpg",
   texto: 'Antiguo nombres de pastor Ortiz en el bajío michoacano, lugar que significa lugar de paja o entre paja.',
   imagenes : [
-    "asociados/Zurumuato/2.jpg"
+    "asociados/Zurumuato/2.jpg",
+    "asociados/Zurumuato/3.jpg",
+    "asociados/Zurumuato/4.jpg",
+    "asociados/Zurumuato/5.jpg",
+    "asociados/Zurumuato/6.jpg"
   ],
   contacto: {
     telefono: '7224409271',
@@ -168,10 +222,38 @@ contacto: {
   logo: "asociados/Tepoli/logo.jpg",
   texto: `Empresa con principios a la cultura nacional pre y post-colombina, resaltando sabores y tradiciones mexicanas.`,
   imagenes : [
-    "asociados/Tepoli/botella.jpg"
+    "asociados/Tepoli/botella.jpg",
+    "asociados/Tepoli/1.jpg",
+    "asociados/Tepoli/2.jpg",
+    "asociados/Tepoli/3.jpg",
+    "asociados/Tepoli/4.jpg",
+    "asociados/Tepoli/5.jpg",
+    "asociados/Tepoli/6.jpg",
+    "asociados/Tepoli/7.jpg",
+    "asociados/Tepoli/8.jpg",
+    "asociados/Tepoli/9.jpg",
+    "asociados/Tepoli/10.jpg"
   ],
   contacto: {
     telefono: '4521057057',
     correo: 'saulrodriguez@tepolicerveceria.com'
   }
-}];
+},
+{
+  id: 12,
+  nombre: 'Uruapense',
+  logo: "asociados/Uruapense/logo.png",
+  texto: `Cervecería artesanal con raíces que datan de 1925 y comercialmente trabajando desde el año 2014. Elabora 12 estilos de cervezas, todas ellas hechas con el proceso artesanal original.`,
+  imagenes : [
+   "asociados/Uruapense/1.jpg",
+   "asociados/Uruapense/2.jpg",
+   "asociados/Uruapense/3.jpg",
+   "asociados/Uruapense/4.jpg",
+   "asociados/Uruapense/5.jpg",
+   "asociados/Uruapense/6.jpg"
+  ],
+  contacto: {
+   telefono: ' 4525238957',
+   correo: 'ventas@cerveceriauruapense.com'
+  }
+  }];

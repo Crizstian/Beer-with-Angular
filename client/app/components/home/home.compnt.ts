@@ -1,6 +1,6 @@
 import {Component,ElementRef,
         Inject,Input, OnInit} from 'angular2/core';
-import {Router}               from 'angular2/router';
+import {Router,RouterLink}               from 'angular2/router';
 import {Observable}           from 'rxjs/Observable';
 import {Observer}             from 'rxjs/Observer';
 import {dispatcher,state}     from '../../logic/newStateDispatcher';
@@ -17,6 +17,7 @@ declare var owlCarousel:any;
 
 @Component({
   selector   : 'home',
+  directives : [RouterLink],
   templateUrl: 'app/components/home/templates/home.html'
 })
 export class HomeCompnt {

@@ -1,5 +1,5 @@
-### Website build with Angular 2 + Redux pattern
+### Website build with Angular 2 + Foundation 6 Framework's
 
-A Website about Traditional Mexican Beer
+A Website about Traditional Mexican Beer from Michoacan State
 
-url: <a href="http://cerarmich.org">Cerarmich</a>
+Website url: <a href="http://cerarmich.org">Cerarmich</a>
