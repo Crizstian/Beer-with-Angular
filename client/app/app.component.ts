@@ -10,6 +10,7 @@ import {NosotrosCompnt}                 from './components/nosotros/nosotros.com
 import {AsociadoViewCompnt}             from './components/asociados/asociado-view.compnt';
 import {AsociadoService}                from './services/asociado.service';
 import {Logger}                         from './services/Logger.service';
+import {EmailService}                   from './services/email.service';
 
 declare var jQuery:any;
 declare var foundation:any;
@@ -18,7 +19,7 @@ declare var foundation:any;
   selector    : 'my-app',
   templateUrl : 'app/app.html',
   directives: [HeaderCompnt,RouterOutlet,FooterCompnt],
-  providers : [AsociadoService,Logger]
+  providers : [AsociadoService,Logger,EmailService]
 })
 @RouteConfig([
   {path: '/',          as: 'Home',      component: HomeCompnt, useAsDefault: true},

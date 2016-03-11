@@ -5,6 +5,7 @@ import {FormBuilder,FORM_DIRECTIVES,
 import {RouteParams, Router,
         RouterLink}           from 'angular2/router';
 import {CustomValidators}     from '../../Validators/custom-validators';
+import {EmailService}         from '../../services/email.service';
 
 @Component({
   selector   : 'contact',
@@ -18,6 +19,7 @@ export class ContactCompnt{
 
   constructor(
     private _builder: FormBuilder,
+    private _emailService: EmailService,
     private _router: Router
   ) {
     this.formulario = {
@@ -44,7 +46,11 @@ export class ContactCompnt{
   }
 
   submitForm(){
-    console.log(this.formulario);
+    this._emailService.send(this.formulario).subscribe(
+      (data) => console.log(data),
+      (err)  => console.log(err),
+      ()     => console.log('email sent')
+    );
   }
 
 }

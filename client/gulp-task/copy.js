@@ -17,9 +17,9 @@ gulp.task('copy:dist:template', () => {
     './app/**/*.html': `${PATHS.DIST_PATH}/app`,
     './app/**/*.jpg': `${PATHS.DIST_PATH}/app`,
     './app/**/*.png': `${PATHS.DIST_PATH}/app`,
-    './app/**/*.tiff': `${PATHS.DIST_PATH}/app`,
     './app/**/*.jpeg': `${PATHS.DIST_PATH}/app`,
-    './app/**/*.json' : `${PATHS.DIST_PATH}/app`
+    './app/**/*.json' : `${PATHS.DIST_PATH}/app`,
+    './php/**/*.php' : `${PATHS.DIST_PATH}`
   });
 });
 

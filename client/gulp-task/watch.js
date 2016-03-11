@@ -10,7 +10,7 @@ gulp.task('watch', (done) => {
   );
 
   gulp.watch(
-    ['./app/**/*.html','index.html'].concat(excludes),
+    ['./app/**/*.html','index.html','./php/*.php'].concat(excludes),
     gulp.series(
       gulp.parallel('copy:dist:template'),
       'server:reload'

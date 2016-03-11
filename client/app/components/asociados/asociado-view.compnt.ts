@@ -49,6 +49,10 @@ export class AsociadoViewCompnt{
   }
 
   ngAfterViewInit(){
+    jQuery('html, body').animate({
+        scrollTop: jQuery("#asociados").offset().top
+    }, 2500);
+
     jQuery("#owl-demo").owlCarousel({
       autoPlay: 3000, //Set AutoPlay to 3 seconds
       // stopOnHover : true,
