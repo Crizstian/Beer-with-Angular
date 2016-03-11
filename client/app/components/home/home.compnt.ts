@@ -41,7 +41,9 @@ export class HomeCompnt {
   }
   ngAfterViewInit(){
     jQuery("#owl-demo-home").owlCarousel({
-      autoPlay: 3500, //Set AutoPlay to 3 seconds
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      // stopOnHover : true,
+      // navigation:true,
       items : 4,
       itemsDesktop : [1199,3],
       itemsDesktopSmall : [979,3]

@@ -1,4 +1,4 @@
-<div class="asociados">
+<div class="asociados view">
   <br>
   <div class="row">
      <div class="large-8 columns">
@@ -14,59 +14,72 @@
      </div>
   </div>
   <div class="row">
-     <div class="medium-6 columns">
-        <img class="thumbnail" src="../app/img/{{image}}">
-        <div class="row small-up-4 grid-cerveza">
-          <div class="column">
-             <img class="thumbnail" src="../app/img/{{asociado.logo}}" (click)="setImage(asociado.logo)">
-          </div>
-           <div class="column" *ngFor="#imagen of asociado.imagenes">
-              <img class="thumbnail" src="../app/img/{{imagen}}" (click)="setImage(imagen)">
+    <div class="row foo" data-equalizer data-equalize-by-row="true">
+      <div class="medium-6 columns bar" data-equalizer-watch="">
+        <div class="imagen">
+          <img class="thumbnail" src="../app/img/{{image}}">
+        </div>
+        <div class="small-4 small-centered columns">
+          <span class="small secondary hollow button" (click)="changeAnt()">Anterior</span>
+          <span class="small secondary hollow button" (click)="changeNext()">Siguiente</span>
+        </div>
+         <div class="row small-up-4 grid-cerveza">
+            <div class="column" *ngFor="#imagen of imagenes">
+               <img class="thumbnail" src="../app/img/{{imagen}}" (click)="setImage(imagen)">
+            </div>
+         </div>
+
+         <!-- <div id="owl-demo" class="owl-demo">
+           <div class="item">
+              <img class="thumbnail" src="../app/img/{{asociado.logo}}" (click)="setImage(asociado.logo)">
            </div>
-        </div>
-     </div>
-     <div class="medium-6 large-5 columns">
-        <h3>{{asociado.nombre}}</h3>
-        <p>{{asociado.texto}}</p>
-        <p>
-          <i class="mdi mdi-email"></i> <a href="mailto:{{asociado.contacto.correo}}" target="_blank">{{asociado.contacto.correo}}</a> <br><br>
-        <p>
-          <i class="mdi mdi-phone"></i> <span>{{asociado.contacto.telefono}}</span><br><br>
-        </p>
-        <div class="row">
-        <div class="small secondary expanded button-group">
-           <a class="button">Facebook</a>
-           <a class="button">Twitter</a>
-           <a class="button">Yo</a>
-        </div>
-     </div>
+           <div class="item" *ngFor="#imagen of asociado.imagenes">
+              <img class="thumbnail" src="../app/img/{{imagen}}" alt="" (click)="setImage(imagen)" />
+           </div>
+         </div> -->
+
+      </div>
+      <div class="medium-6 large-5 columns bar" data-equalizer-watch="">
+         <h3><i class="mdi mdi-beer"></i> {{asociado.nombre}}</h3>
+         <p>{{asociado.texto}} <br><br>
+           <i class="mdi mdi-email"></i> <a href="mailto:{{asociado.contacto.correo}}" target="_blank">{{asociado.contacto.correo}}</a>
+           <br>
+           <i class="mdi mdi-phone"></i> <span>{{asociado.contacto.telefono}}</span>
+         </p>
+         <div class="row">
+         <div class="small  expanded button-group">
+            <a class="secondary hollow button">Facebook</a>
+            <a class="secondary hollow button">Twitter</a>
+            <a class="secondary hollow button">Correo</a>
+         </div>
+      </div>
+    </div>
   </div>
   <div class="row">
      <div class="large-12 columns">
        <hr>
-       <ul class="tabs" data-tabs id="example-tabs">
-          <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Comentarios</a></li>
-          <li class="tabs-title"><a href="#panel2" (click)="getRandom()">Productos Similares</a></li>
-       </ul>
-       <div class="tabs-content" data-tabs-content="example-tabs">
-          <div class="tabs-panel is-active" id="panel1">
+       <div class="row">
+         <div class="large-10 large-centered columns" >
+           <h4>Productos Similares</h4>
+            <div class="row medium-up-4 large-up-6 grid-cerveza-similar" data-equalizer data-equalize-by-row="true">
+               <div class="column callout" *ngFor="#asoc of asociados" data-equalizer-watch="" style="height:300px;">
+                  <img class="thumbnail" src="../app/img/{{asoc.logo}}">
+                  <p>{{asoc.texto.substr(0,70)}}...</p>
+                  <a [routerLink]="['/Asociado',{id: asoc.id}]" class="button hollow tiny expanded">Ver más...</a>
+               </div>
+            </div>
+         </div>
+         <hr>
+          <div class="large-10 large-centered columns" >
              <h4>Comentarios</h4>
-             <disqus [shortname]="'https://cerarmich.disqus.com'" [identifier]="asociado.id"></disqus>
+             <disqus [shortname]="'cerarmich'" [identifier]="identifier"></disqus>
              <label>
-             Mi Comentario
+             Agregar Comentario
              <textarea placeholder="None"></textarea>
              </label>
              <button class="button">Enviar Comentario</button>
           </div>
-          <div class="tabs-panel" id="panel2">
-             <div class="row medium-up-4 large-up-6 grid-cerveza-similar">
-                <div class="column" *ngFor="#asoc of asociados">
-                   <img class="thumbnail" src="../app/img/{{asoc.logo}}">
-                   <p>{{asoc.texto.substr(0,80)}}...</p>
-                   <a [routerLink]="['/Asociado',{id: asoc.id}]" class="button hollow tiny expanded">Ver más...</a>
-                </div>
-             </div>
-          </div>
+
        </div>
      </div>
   </div>
